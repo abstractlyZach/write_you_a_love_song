@@ -54,6 +54,6 @@ for artist in artists:
 						'verses': song['verses']}
 					song_list.append(song_dict)
 		# json dump to that artist's file
-		json.dump(song_list, writefile)
+		json.dump(song_list, writefile, indent=0)
 
 print('Created {} artist files.'.format(len(artists)))
