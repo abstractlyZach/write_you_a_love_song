@@ -16,10 +16,11 @@ class AZLyricsSpider(scrapy.Spider):
 			# 'http://www.metrolyrics.com/shape-of-you-lyrics-ed-sheeran.html',
 			# 'http://www.metrolyrics.com/you-belong-with-me-lyrics-taylor-swift.html',
 			# 'http://www.metrolyrics.com/imagine-dragons-lyrics.html',
+			# 'http://www.metrolyrics.com/shots-lyrics-imagine-dragons.html',
+
 
 			# my selection of artists from the top artists page:
 			# 		http://www.metrolyrics.com/top-artists.html
-			'http://www.metrolyrics.com/shots-lyrics-imagine-dragons.html',
 			'http://www.metrolyrics.com/ed-sheeran-lyrics.html',
 			'http://www.metrolyrics.com/bruno-mars-lyrics.html',
 			'http://www.metrolyrics.com/disney-lyrics.html',
@@ -36,6 +37,9 @@ class AZLyricsSpider(scrapy.Spider):
 			'http://www.metrolyrics.com/michael-jackson-lyrics.html',
 			'http://www.metrolyrics.com/the-weeknd-lyrics.html',
 			'http://www.metrolyrics.com/prince-lyrics.html',
+			'http://www.metrolyrics.com/chance-the-rapper-lyrics.html',
+			'http://www.metrolyrics.com/imagine-dragons-lyrics.html',
+
 		]
 		for url in urls:
 			yield scrapy.Request(url=url, callback=self.parse)
