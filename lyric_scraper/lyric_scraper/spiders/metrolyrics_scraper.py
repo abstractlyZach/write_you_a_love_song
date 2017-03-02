@@ -142,7 +142,8 @@ class AZLyricsSpider(scrapy.Spider):
 				start = line.find('[')
 				end = line.find(']')
 			if line.strip() != '':
-				cleaned_verse.append(line)
+				cleaned_verse.append(line.strip()) # trying with stripping the line. 
+												# I don't think this should change anything
 		return cleaned_verse
 
 
