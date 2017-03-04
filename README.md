@@ -8,3 +8,6 @@
 1. Run `python {project}/scripts/extract_artists.py`
 	1. This will ask you to fix any titles and artists that couldn't be scraped.
 	1. Then, it will separate the batch files into artist files
+
+
+All modules in models/ and utils/ are designed to be run from the main-level project directory. The scripts in scripts/ can be run from wherever.

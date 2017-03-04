@@ -3,8 +3,9 @@
 import csv
 import numpy
 from collections import defaultdict
+from utils import exceptions, text
 
-def read_bigrams(file_name='count_2w.txt'):
+def read_bigrams(file_name='data/ngrams/count_2w.txt'):
 	'''Reads a file of bigrams and their counts and returns
 	a dictionary linking the first word to a NextWord object that can return
 	a next word based on conditional probability
@@ -41,18 +42,15 @@ class NextWord:
 		return [count / self._N for count in self._counts]
 
 
-class WordNotFoundError(Exception):
-	'''Exception that is raised when a word is not found'''
-	def __init__(self, word):
-		message = "WordNotFoundError: Could not find word '{}' in the dictionary."
-		super(Exception, self).__init__(message.format(word))
-
-
 BIGRAMS = read_bigrams()
 def get_next_word(word):
 	'''Given a word, finds a likely next word using bigrams.'''
 	word = word.strip().lower()
 	try:
-		return BIGRAMS[word].get_word()
+		while True:
+			to_return = BIGRAMS[word].get_word()
+			if text.check_word(to_return):
+				break # return the word if it's ok
+		return to_return
 	except KeyError:
-		raise WordNotFoundError(word)
+		raise exceptions.WordNotFoundError(word)

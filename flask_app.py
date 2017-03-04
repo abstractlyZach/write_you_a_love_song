@@ -1,6 +1,7 @@
-import utils
+# flask_app.py
+
 import random
-import simple_models
+from models import simple_models
 # from scripts import print_songs
 
 from flask import Flask
