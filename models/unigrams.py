@@ -29,5 +29,6 @@ def get_word(unigram_probabilities=UNIGRAMS):
 		word = numpy.random.choice(unigram_probabilities[0], p=unigram_probabilities[1])
 		if text.check_word(word): # word is ok
 			break
+		print('bad unigram: {}'.format(word))
 	return word
 

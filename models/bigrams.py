@@ -3,7 +3,7 @@
 import csv
 import numpy
 from collections import defaultdict
-from utils import exceptions, text
+from utils import exceptions, text, constants
 
 def read_bigrams(file_name='data/ngrams/count_2w.txt'):
 	'''Reads a file of bigrams and their counts and returns
@@ -47,10 +47,15 @@ def get_next_word(word):
 	'''Given a word, finds a likely next word using bigrams.'''
 	word = word.strip().lower()
 	try:
+		counter = 0
 		while True:
 			to_return = BIGRAMS[word].get_word()
 			if text.check_word(to_return):
 				break # return the word if it's ok
+			if counter >= constants.PROFANITY_RETRY:
+				print('could not find a reasonable next word for {}.'.format(word))
+				break
+			counter += 1
 		return to_return
 	except KeyError:
 		raise exceptions.WordNotFoundError(word)

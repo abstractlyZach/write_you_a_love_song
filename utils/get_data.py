@@ -50,7 +50,7 @@ def get_lyrics(song_title):
 
 def get_bad_words():
 	'''Returns a list of bad words to avoid'''
-	with open('/data/wordlists/google_bad_words', 'r', encoding='utf-8') as json_file:
+	with open('data/wordlists/google_bad_words.json', 'r', encoding='utf-8') as json_file:
 		bad_words = json.load(json_file)
 	return bad_words
 
