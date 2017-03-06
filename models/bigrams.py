@@ -29,7 +29,7 @@ class NextWord:
 		self._N = 0
 
 	def add(self, word, count):
-		self._words.append(word)
+		self._words.append(word.strip().lower())
 		self._counts.append(count)
 		self._N += count
 

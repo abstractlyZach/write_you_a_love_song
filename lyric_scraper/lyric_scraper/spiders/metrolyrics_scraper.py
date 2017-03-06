@@ -59,11 +59,16 @@ class AZLyricsSpider(scrapy.Spider):
 				if verse != []:
 					verses.append(verse)
 			# text = self.clean_lyrics(text)
-			yield {
-				'artist': artist,
-				'title': title,
-				'verses': verses,
-			}
+			# ignore pages with no verses.
+			# ex. http://www.metrolyrics.com/the-hardest-partpostcards-from-far-away-lyrics-coldplay.html
+			if len(verses):
+				pass
+			else:
+				yield {
+					'artist': artist,
+					'title': title,
+					'verses': verses,
+				}
 		elif self.is_artist_page(window_title):
 			for song_link in self.get_song_links_from_artist_page(response):
 				yield scrapy.Request(song_link, callback=self.parse)
