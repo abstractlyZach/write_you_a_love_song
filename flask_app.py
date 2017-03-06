@@ -2,6 +2,7 @@
 
 import random
 from models import simple_models
+from utils import get_data
 # from scripts import print_songs
 
 from flask import Flask
@@ -9,10 +10,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-	song = simple_models.simple_song('bruno mars')
+	artist = random.choice(get_data.get_artists())
+	song = simple_models.simple_song(artist)
 	return '''<!DOCTYPE html>
 <html>
 <body>
+
+<a href='http://www.github.com/exzacktlee/write_you_a_love_song'>See the code!</a>
 
 {}
 

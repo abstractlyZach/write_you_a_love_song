@@ -10,8 +10,8 @@ import os
 import fix_titles
 
 this_file = os.path.dirname(__file__)
-batch_directory = os.path.join(this_file, '../songs/batch')
-artist_directory = os.path.join(this_file, '../songs/artists')
+batch_directory = os.path.join(this_file, '../data/songs/batch')
+artist_directory = os.path.join(this_file, '../data/songs/artists')
 
 # delete old artist files
 print('Cleaning artist/ directory...')

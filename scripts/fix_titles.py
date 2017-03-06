@@ -7,7 +7,7 @@ import json
 import os
 
 this_file = os.path.dirname(__file__)
-batch_directory = os.path.join(this_file, '../songs/batch')
+batch_directory = os.path.join(this_file, '../data/songs/batch')
 batch_files = os.listdir(batch_directory)
 
 fix_counter = 0

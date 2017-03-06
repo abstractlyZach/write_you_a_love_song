@@ -54,3 +54,15 @@ def get_bad_words():
 		bad_words = json.load(json_file)
 	return bad_words
 
+def get_artists():
+	'''Returns a list of all artists in the training data'''
+	batch_directory = 'data/songs/batch'
+	batch_files = os.listdir(batch_directory)
+	artists = set()
+	for batch_file_name in batch_files:
+		batch_file = os.path.join(batch_directory, batch_file_name)
+		with open(batch_file, 'r', encoding='utf-8') as json_file:
+			songs = json.load(json_file)
+		for song in songs:
+			artists.add(song['artist'])
+	return list(artists)
