@@ -49,10 +49,10 @@ def welcome_page():
 	return to_return
 
 
-@app.route("/vote")
+@app.route("/vote") # "/vote/<string:artist>"
 def vote_page():
-	artist = random.choice(get_data.get_artists())
-	song = simple_models.simple_song(artist)
+	# artist = random.choice(get_data.get_artists())
+	# song = simple_models.simple_song(artist)
 	return '''
 <html>
 <link rel= "stylesheet" type= "text/css" href= "static/style.css">
@@ -77,11 +77,13 @@ def vote_page():
 			ajaxRequest.onreadystatechange = function() {
 				if(ajaxRequest.readyState == 4) {
 					enableVoting();
-					document.getElementById("song1").innerHTML = "hello world";
-					document.getElementById("song2").innerHTML = ajaxRequest.responseText;
+					document.getElementById("algorithm1").value = ajaxRequest.responseText.split("|||")[0];
+					document.getElementById("algorithm2").value = ajaxRequest.responseText.split("|||")[1];
+					document.getElementById("song1").innerHTML = ajaxRequest.responseText.split("|||")[2];
+					document.getElementById("song2").innerHTML = ajaxRequest.responseText.split("|||")[3];
 				}
 			}
-			ajaxRequest.open('GET', "/get_songs/" + "a",
+			ajaxRequest.open('GET', "/get_songs/" + document.getElementById("artist").value,
 							true);
 			ajaxRequest.send(null);
 		}
@@ -274,7 +276,11 @@ def vote_page():
 
 @app.route("/get_songs/<string:artist>")
 def get_songs(artist):
-	return "<h2>{}</h2>".format(artist)
+	algorithm1 = 'abc'
+	algorithm2 = 'aeiou'
+	song1 = '<h2>life is a highwayyyyy~~~~</h2>'
+	song2 = '<h2>stairway to heaven</h2>'
+	return "|||".join([algorithm1, algorithm2, song1, song2])
 
 
 @app.route("/vote_for/<string:algorithm1>/<string:algorithm2>/<int:winner>/<string:artist>")
