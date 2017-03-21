@@ -16,6 +16,7 @@ class Song:
 		return self._verses
 
 	def print(self):
+		print()
 		print('Title: {}'.format(self._title))
 		print('Artist: {}'.format(self._artist))
 		print()
@@ -24,17 +25,16 @@ class Song:
 				print(line)
 			print()
 		print()
-		print()
 
 	def get_html(self, title=False, artist=False):
 		to_return = ''
 		if title:
-			to_return += '<h1>Title: {}</h1>'.format(self._title)
+			to_return += '<h2 class="song-title">Title: {}</h2>\n'.format(self._title)
 		if artist:
-			to_return += '<h3>Artist: {}</h3>'.format(self._artist)
+			to_return += '<h3 class="song-artist">Artist: {}</h3>\n'.format(self._artist)
 		for verse in self._verses:
 			for line in verse:
-				to_return += '<br>' + line
-			to_return += '<br>'
-		to_return += '<br><br>'
+				to_return += '\n<br>' + line
+			to_return += '\n<br>'
+		to_return += '\n<br>'
 		return to_return

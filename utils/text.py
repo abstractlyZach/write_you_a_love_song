@@ -18,9 +18,21 @@ def detokenize(words):
 			words[index - 1] = words[index - 1] + word
 	for word in remove_words:
 		words.remove(word)
+	# "Wanna", "gonna"
+	words = combine_words(words, "wan", "na")
+	words = combine_words(words, "gon", "na")
 	# capitalize first word and all words that are "I"
 	words[0] = words[0].capitalize()
 	for index, word in enumerate(words):
 		if word == "i":
 			words[index] = "I"
 	return ' '.join(detokenizer.detokenize(words))
+
+def combine_words(words, first_word, second_word):
+	'''Combine two words and fix the list'''
+	if first_word in words:
+		first_index = words.index(first_word)
+		if words[first_index + 1] == second_word:
+			words[first_index] = first_word + second_word
+			words.remove(second_word)
+	return words

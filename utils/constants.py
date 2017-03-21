@@ -1,3 +1,4 @@
 # constants.py
 
 PROFANITY_RETRY = 10
+NO_ENDERS_RETRY = 15
