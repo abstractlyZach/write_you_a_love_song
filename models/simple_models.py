@@ -9,9 +9,10 @@ from utils import get_data
 from utils import text
 from . import basic_songwriter
 
-class SimpleSongWriter(basic_songwriter.BasicSongWriter):
+class GoogleNGramsSongWriter(basic_songwriter.BasicSongWriter):
 	def new_song(self, artist):
 		return simple_song(artist)
+		
 
 def string_bigrams(seed_word, len=10):
 	'''Strings together bigrams for the given length.'''
