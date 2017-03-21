@@ -17,7 +17,7 @@ def hello():
 <body>
 
 <a href='http://www.github.com/exzacktlee/write_you_a_love_song'>See the code!</a>
-
+<a href='.'>New Song</a>
 {}
 
 </body>
@@ -37,6 +37,7 @@ def hi(post_id):
 
 </body>
 </html>'''.format(post_id + 2)
+
 
 if __name__ == "__main__":
 	app.run('0.0.0.0')

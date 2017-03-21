@@ -6,6 +6,12 @@ from . import bigrams
 from utils import song
 from utils import exceptions
 from utils import get_data
+from utils import text
+from . import basic_songwriter
+
+class SimpleSongWriter(basic_songwriter.BasicSongWriter):
+	def new_song(self, artist):
+		return simple_song(artist)
 
 def string_bigrams(seed_word, len=10):
 	'''Strings together bigrams for the given length.'''
@@ -46,3 +52,24 @@ def simple_song(artist):
 						artist.title() + " and Zach", 
 						final_song
 					)
+
+def get_artist_line_from_bigrams(length=10):
+	current_word = '<S>'
+	string_sequence = []
+	artist_bigrams, enders = bigrams.get_bigram_generator_and_enders('data/ngrams/Taylor_Swift.txt')
+	while len(string_sequence) <= length:
+		try:
+			previous_word = current_word
+			current_word = bigrams.get_next_word(previous_word, bigrams=artist_bigrams)
+			while current_word == '</s>':
+				current_word = bigrams.get_next_word(previous_word, bigrams=artist_bigrams)
+			if len(string_sequence) == length - 1:
+				if current_word not in enders:
+					continue
+		except exceptions.WordNotFoundError:
+			print('inserting unigram because of {}'.format(previous_word))
+			current_word = unigrams.get_word()
+		string_sequence.append(current_word)
+	string_sequence.insert(0, '<S>')
+	string_sequence.append('</S>')
+	return text.detokenize(string_sequence)

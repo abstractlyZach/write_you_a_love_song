@@ -3,13 +3,19 @@
 # extracts all the artists from the batch files and then creates an n-gram 
 # text for them in {project}/data/ngrams
 
+# you must run this script from the main project directory
+
 import json
 import os
 from collections import defaultdict
 import script_utils
+import sys
 
 # prompt user to fix the titles first 
 import fix_titles
+
+# set n according to command line parameter
+n = int(sys.argv[1])
 
 this_file = os.path.dirname(__file__)
 batch_directory = os.path.join(this_file, '../data/songs/batch')
@@ -28,7 +34,7 @@ for batch_file_name in batch_files:
 print('Creating artist files.')
 for artist in artists:
 	# dictionary mapping ngrams (tuple) to counts of those tuples
-	ngrams = defaultdict()
+	ngram_dict = defaultdict(int)
 	print('   Creating file for {}...'.format(artist))
 	artist_file_name = artist.replace(' ', '_') + '.txt'
 	artist_ngrams_file = os.path.join(ngrams_directory, artist_file_name)
@@ -43,5 +49,16 @@ for artist in artists:
 					verses = song['verses']
 					for verse in verses:
 						for line in verse:
-							print(script_utils.line_to_ngrams(line, 2))
+							ngrams = script_utils.line_to_ngrams(line, n, punctuation=True)
+							for ngram in ngrams:
+								ngram_dict[ngram] += 1
+		# write the counts to the file
+		for ngram, count in sorted(ngram_dict.items(), key=lambda x: x[1], reverse=True):
+			to_write = ''
+			for word_count in range(n):
+				to_write += '{} '.format(ngram[word_count])			
+			to_write += '\t' + str(count) + '\n'
+			writefile.write(to_write)
+
+
 

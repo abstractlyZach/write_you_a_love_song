@@ -3,6 +3,7 @@
 # utilities for the scripts directory
 
 import nltk
+from nltk.tokenize.moses import MosesDetokenizer
 
 def keep_line(line):
 	'''Returns a boolean telling whether or not to keep a line from the ngrams file'''
@@ -25,3 +26,7 @@ def line_to_ngrams(line, n, punctuation=False):
 	for start_index in range(len(words) - n + 1):
 		ngrams.append(tuple(words[start_index: start_index + n]))
 	return ngrams
+
+detokenizer = MosesDetokenizer()
+def detokenize(words):
+	return ' '.join(detokenizer.detokenize(words))

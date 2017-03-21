@@ -26,11 +26,12 @@ class Song:
 		print()
 		print()
 
-	def get_html(self):
+	def get_html(self, title=False, artist=False):
 		to_return = ''
-		to_return += '<h1>Title: {}</h1>'.format(self._title)
-		to_return += '<h3>Artist: {}</h3>'.format(self._artist)
-		to_return += '<br>'
+		if title:
+			to_return += '<h1>Title: {}</h1>'.format(self._title)
+		if artist:
+			to_return += '<h3>Artist: {}</h3>'.format(self._artist)
 		for verse in self._verses:
 			for line in verse:
 				to_return += '<br>' + line

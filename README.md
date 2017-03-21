@@ -10,4 +10,4 @@
 	1. Then, it will separate the batch files into artist files
 
 
-All modules in models/ and utils/ are designed to be run from the main-level project directory. The scripts in scripts/ can be run from wherever.
+All modules in models/ and utils/ are designed to be run from the main-level project directory. The scripts in scripts/ can mostly be run from wherever.
