@@ -10,10 +10,10 @@
 	1. Then, it will separate the batch files into artist files
 
 
-Project Title: I’m Just Gonna Write You a Love Song
-(Project Proposal for CS 175, Winter 2017)
-Team Member(s):
-Zachary Lee, 55104210, zalee@uci.edu
+#Project Title: I’m Just Gonna Write You a Love Song
+##(Project Proposal for CS 175, Winter 2017)
+##Team Member(s):
+##Zachary Lee, 55104210, zalee@uci.edu
 1. Project Summary  
 	This project will use Markov chains and part-of-speech replacement techniques to synthesize song lyrics using a data set of song lyrics scraped from the Internet. The project will be evaluated for improvement with the use of user studies.
 
@@ -34,25 +34,25 @@ I am using Google N-grams (http://storage.googleapis.com/books/ngrams/books/data
 I plan on utilizing user evaluation to improve this project. I will set up a website that allows users to compare two different song lyrics and choose the one they think is better. I will generate both passages with the exact same starting parameters, but they will be different versions of the algorithm. I am going to slot in different techniques to see if including those techniques increases popularity with users.
 
 6. Software
-a) code I have written
-* lyric_scraper
-	* parses webpages to generate a set of links to lyric pages
-	* parses lyric pages to find essential elements from the html
-	* scrapes the title, author, and lyrics from the webpage
-	* cleans the extracted text and stores it in a local file
-b) code written by others
-* scrapy: https://scrapy.org/ 
-	* skeleton for webcrawler
-* nltk: http://nltk.org/
-	* toolkit for processing language
-	* used for tokenization
-c) code I plan to write/use
-* google n-grams: http://storage.googleapis.com/books/ngrams/books/datasetsv2.html
-	* used to help train markov chains
-* flask: http://flask.pocoo.org/
-	* Python server that handles http requests
-* scikit-learn: http://scikit-learn.org/
-	* tools for data analysis and machine learning
+	1. code I have written
+	* lyric_scraper
+		* parses webpages to generate a set of links to lyric pages
+		* parses lyric pages to find essential elements from the html
+		* scrapes the title, author, and lyrics from the webpage
+		* cleans the extracted text and stores it in a local file
+	1. code written by others
+	* scrapy: https://scrapy.org/ 
+		* skeleton for webcrawler
+	* nltk: http://nltk.org/
+		* toolkit for processing language
+		* used for tokenization
+	1. code I plan to write/use
+	* google n-grams: http://storage.googleapis.com/books/ngrams/books/datasetsv2.html
+		* used to help train markov chains
+	* flask: http://flask.pocoo.org/
+		* Python server that handles http requests
+	* scikit-learn: http://scikit-learn.org/
+		* tools for data analysis and machine learning
 
 7. Challenges Identified
 	I originally started out scraping www.azlyrics.com, but they banned my IP every time I scraped more than 120 pages, regardless of speed. I tried using proxies, randomizing my user agent, and using a VPN, but these all failed. I worked on it on and off over the course of a day, and it was a frustrating day.
