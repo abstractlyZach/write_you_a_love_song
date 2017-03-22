@@ -5,7 +5,7 @@ it 's 	167
 oh , 	143
 la la 	130
 , i 	129
-<S> oh 	127
+<S> oh 	128
 <S> it 	120
 <S> we 	118
 , oh 	115
@@ -13,18 +13,18 @@ la la 	130
 do n't 	114
 me </S> 	108
 giving up 	108
-you </S> 	94
+you </S> 	101
 oh oh 	92
 i 've 	80
 . </S> 	77
 in the 	72
 , </S> 	72
+oh </S> 	70
 to the 	69
 down </S> 	69
 up , 	67
 <S> but 	66
 ? </S> 	61
-oh </S> 	61
 now </S> 	58
 we are 	55
 we 're 	55
@@ -32,7 +32,6 @@ i bet 	54
 bet my 	54
 there 's 	52
 <S> there 	51
-) </S> 	51
 , we 	50
 <S> hey 	50
 <S> when 	49
@@ -72,6 +71,7 @@ you 've 	35
 we 've 	35
 <S> the 	34
 <S> if 	34
+pain </S> 	34
 you 'll 	33
 all the 	33
 when i 	32
@@ -105,6 +105,7 @@ i do 	26
 <S> whoa 	26
 <S> your 	26
 eyes </S> 	26
+! </S> 	26
 n't you 	26
 hide </S> 	26
 just a 	25
@@ -112,7 +113,6 @@ i , 	25
 <S> all 	25
 i am 	25
 <S> no 	25
-! </S> 	25
 all </S> 	25
 you down 	24
 <S> now 	24
@@ -148,7 +148,6 @@ night </S> 	22
 in my 	22
 <S> take 	22
 's not 	22
-pain </S> 	22
 you 're 	22
 know </S> 	22
 hey ! 	22
@@ -188,7 +187,6 @@ i wo 	18
 time to 	18
 n't matter 	18
 top of 	18
-<S> ( 	18
 each other 	18
 <S> been 	18
 rock bottom 	18
@@ -196,8 +194,6 @@ let you 	17
 in </S> 	17
 never meant 	17
 <S> cause 	17
-( oh 	17
-oh ) 	17
 be the 	17
 ta get 	17
 , it 	17
@@ -299,6 +295,8 @@ coming home 	13
 <S> not 	13
 love to 	13
 your mind 	13
+way </S> 	13
+<S> till 	13
 wait for 	13
 a little 	13
 to my 	13
@@ -347,7 +345,6 @@ time </S> 	12
 <S> every 	12
 show me 	12
 what i 	12
-<S> till 	12
 <S> open 	12
 open up 	12
 till you 	12
@@ -368,8 +365,7 @@ levitate </S> 	12
 begging , 	12
 , begging 	12
 out for 	12
-( pain 	12
-pain ) 	12
+<S> pain 	12
 , believer 	12
 the last 	11
 feel it 	11
@@ -389,13 +385,11 @@ too far 	11
 <S> where 	11
 <S> everything 	11
 've made 	11
-'' </S> 	11
 'm coming 	11
 <S> at 	11
 at the 	11
 believe in 	11
 <S> maybe 	11
-way </S> 	11
 you know 	11
 if it 	11
 <S> tokyo 	11
@@ -427,7 +421,7 @@ to come 	10
 to leave 	10
 your head 	10
 what we 	10
-you ( 	10
+you i 	10
 me up 	10
 of it 	10
 you close 	10
@@ -477,6 +471,7 @@ where do 	9
 they 're 	9
 call </S> 	9
 n't look 	9
+us </S> 	9
 time is 	9
 is taking 	9
 taking over 	9
@@ -554,7 +549,6 @@ aright </S> 	8
 leave the 	8
 's time 	8
 touch me 	8
-<S> `` 	8
 glory ! 	8
 gold </S> 	8
 my kingdom 	8
@@ -669,7 +663,6 @@ do i 	7
 by the 	7
 again i 	7
 i will 	7
-you i 	7
 to gold 	7
 everything </S> 	7
 'm ready 	7
@@ -683,8 +676,7 @@ gold , 	7
 flames </S> 	7
 was </S> 	7
 get easier 	7
-( for 	7
-you ) 	7
+you for 	7
 n't i 	6
 <S> well 	6
 a slave 	6
@@ -766,6 +758,7 @@ the both 	6
 both of 	6
 of us 	6
 'm the 	6
+home </S> 	6
 made of 	6
 my heat 	6
 heat </S> 	6
@@ -801,6 +794,7 @@ press on 	6
 heart , 	6
 wall </S> 	6
 day </S> 	6
+<S> one 	6
 will you 	6
 me back 	6
 else </S> 	6
@@ -821,8 +815,7 @@ what this 	6
 is for 	6
 in just 	6
 oh it 	6
-( x4 	6
-x4 ) 	6
+x4 </S> 	6
 just by 	6
 's hard 	6
 nice to 	6
@@ -904,6 +897,7 @@ sorry </S> 	5
 never made 	5
 alright </S> 	5
 <S> she 	5
+oh this 	5
 light </S> 	5
 but you 	5
 it was 	5
@@ -951,7 +945,6 @@ my knees 	5
 tight </S> 	5
 on a 	5
 not the 	5
-us </S> 	5
 you hear 	5
 same old 	5
 hands </S> 	5
@@ -990,11 +983,11 @@ show </S> 	5
 never seen 	5
 all living 	5
 till we 	5
+older </S> 	5
 's gon 	5
 <S> tell 	5
 know you 	5
-( x3 	5
-x3 ) 	5
+x3 </S> 	5
 just to 	5
 the wall 	5
 oh let 	5
@@ -1005,6 +998,7 @@ n't fall 	5
 meet you 	5
 hey mr. 	5
 <S> cherry 	5
+in oh 	5
 , help 	5
 dirt </S> 	5
 the colors 	5
@@ -1092,11 +1086,10 @@ lay me 	4
 ta leave 	4
 town and 	4
 <S> break 	4
-break ( 	4
-) this 	4
-this ( 	4
-) curse 	4
-curse ( 	4
+break oh 	4
+this oh 	4
+oh curse 	4
+curse oh 	4
 ha ha 	4
 need to 	4
 and watch 	4
@@ -1165,13 +1158,12 @@ up when 	4
 hole inside 	4
 a matter 	4
 matter of 	4
-of `` 	4
-`` oh 	4
+of oh 	4
 n't touch 	4
 you touch 	4
 me no 	4
 no more 	4
-more '' 	4
+more </S> 	4
 me in 	4
 the meantime 	4
 money , 	4
@@ -1181,14 +1173,13 @@ ta go 	4
 'll hear 	4
 me singing 	4
 singing you 	4
-`` glory 	4
+<S> glory 	4
 ! glory 	4
 ! hallelujah 	4
 hallelujah ... 	4
 ... you 	4
 it easy 	4
 easy for 	4
-us '' 	4
 's in 	4
 you up 	4
 <S> coming 	4
@@ -1230,7 +1221,6 @@ line , 	4
 , selene 	4
 selene </S> 	4
 see it 	4
-`` one 	4
 and you 	4
 n't recognize 	4
 recognize these 	4
@@ -1254,7 +1244,6 @@ right </S> 	4
 living </S> 	4
 we grow 	4
 grow older 	4
-older </S> 	4
 the worker 	4
 worker </S> 	4
 the soldier 	4
@@ -1264,8 +1253,7 @@ rain </S> 	4
 me all 	4
 <S> show 	4
 up your 	4
-( x2 	4
-x2 ) 	4
+x2 </S> 	4
 and what 	4
 a candle 	4
 everybody , 	4
@@ -1684,8 +1672,6 @@ changed and 	3
 and </S> 	3
 what am 	3
 matter </S> 	3
-( i 	3
-home ) 	3
 we see 	3
 fail </S> 	3
 the worst 	3
@@ -1759,7 +1745,6 @@ of you 	3
 na be 	3
 have you 	3
 <S> fall 	3
-me ( 	3
 everybody </S> 	3
 're just 	3
 just gon 	3
@@ -1782,7 +1767,6 @@ know , 	3
 but not 	3
 nothing good 	3
 've let 	3
-down ( 	3
 everyone </S> 	3
 cause after 	3
 after all 	3
@@ -1810,7 +1794,6 @@ days get 	3
 get heavy 	3
 heavy </S> 	3
 please let 	3
-in oh 	3
 n't break 	3
 break you 	3
 will not 	3
@@ -1856,7 +1839,6 @@ and there 	3
 , let 	3
 it drift 	3
 long way 	3
-home </S> 	3
 tired of 	3
 the tables 	3
 <S> never 	3
@@ -2369,14 +2351,12 @@ one step 	2
 step at 	2
 at a 	2
 a time 	2
-time '' 	2
-'' , 	2
+time , 	2
 one trip 	2
 trip , 	2
 're back 	2
 back that 	2
 that way 	2
-way '' 	2
 these hands 	2
 not who 	2
 'll try 	2
@@ -2425,6 +2405,7 @@ in line 	2
 line with 	2
 with what 	2
 're meant 	2
+<S> x2 	2
 i saw 	2
 <S> things 	2
 things will 	2
@@ -2468,6 +2449,8 @@ tragedy </S> 	2
 is there 	2
 there nothing 	2
 good in 	2
+me x4 	2
+down x4 	2
 get caught 	2
 caught up 	2
 no these 	2
@@ -2573,7 +2556,7 @@ a mission 	2
 mission </S> 	2
 want no 	2
 no trouble 	2
-trouble ( 	2
+trouble x4 	2
 mention </S> 	2
 got no 	2
 faith </S> 	2
@@ -2606,7 +2589,6 @@ and crumble 	2
 crumble away 	2
 always a 	2
 were the 	2
-one ( 	2
 me from 	2
 from above 	2
 they do 	2
@@ -2688,7 +2670,7 @@ comes to 	2
 to back 	2
 back you 	2
 you oh 	2
-oh ( 	2
+oh x3 	2
 rings </S> 	2
 how come 	2
 come i 	2
@@ -2800,7 +2782,6 @@ lane </S> 	2
 a rollin 	2
 ' freight 	2
 freight train 	2
-<S> one 	2
 ta start 	2
 start all 	2
 all over 	2
@@ -2817,7 +2798,6 @@ arriving </S> 	2
 at you 	2
 <S> better 	2
 pace </S> 	2
-in ( 	2
 tried to 	2
 you what 	2
 your back 	2
@@ -3644,8 +3624,8 @@ stars look 	1
 what do 	1
 do they 	1
 they see 	1
-( x5 	1
-x5 ) 	1
+<S> x5 	1
+x5 </S> 	1
 sleep so 	1
 so well 	1
 well at 	1
@@ -3676,9 +3656,7 @@ they telling 	1
 telling me 	1
 me it 	1
 okay ? 	1
-( till 	1
 're older 	1
-older ) 	1
 only for 	1
 a second 	1
 second </S> 	1
@@ -3701,6 +3679,7 @@ saw was 	1
 was opulence 	1
 opulence </S> 	1
 not for 	1
+me x3 	1
 <S> run 	1
 run for 	1
 for cover 	1
@@ -3856,6 +3835,7 @@ knows that 	1
 that nothing 	1
 good comes 	1
 comes free 	1
+down x2 	1
 <S> petty 	1
 petty lies 	1
 lies to 	1
@@ -3913,12 +3893,11 @@ n't meant 	1
 said yourself 	1
 yourself fantastically 	1
 fantastically , 	1
-, `` 	1
-`` congratulations 	1
+, congratulations 	1
 congratulations you 	1
 were all 	1
 all alone 	1
-alone '' 	1
+alone </S> 	1
 rain wo 	1
 fall for 	1
 sun wo 	1
@@ -4048,9 +4027,8 @@ it then 	1
 can atone 	1
 atone </S> 	1
 <S> goodnight 	1
-goodnight ( 	1
-( x8 	1
-x8 ) 	1
+goodnight x8 	1
+x8 </S> 	1
 <S> woman 	1
 woman , 	1
 turn my 	1
@@ -4200,9 +4178,11 @@ of night 	1
 keep on 	1
 on praying 	1
 praying to 	1
+one x3 	1
 who helped 	1
 helped me 	1
 me see 	1
+one x2 	1
 you gave 	1
 gave it 	1
 all to 	1
@@ -4981,7 +4961,7 @@ rest </S> 	1
 to run 	1
 run and 	1
 hide ? 	1
-? ( 	1
+? oh 	1
 never said 	1
 want this 	1
 this burden 	1
@@ -4990,7 +4970,7 @@ came to 	1
 's made 	1
 's home 	1
 home inside 	1
-inside ( 	1
+inside oh 	1
 life and 	1
 and set 	1
 road is 	1
@@ -5001,11 +4981,9 @@ easier </S> 	1
 calling and 	1
 and calling 	1
 over unless 	1
-pain ( 	1
-( dolla 	1
+pain dolla 	1
 dolla sign 	1
 sign ! 	1
-! ) 	1
 the squad 	1
 squad tatted 	1
 tatted on 	1
@@ -5422,11 +5400,10 @@ say that 	1
 you somehow 	1
 somehow , 	1
 , somehow 	1
-sorry ( 	1
+sorry x3 	1
 an </S> 	1
 <S> empty 	1
 <S> wrong 	1
-oh this 	1
 born </S> 	1
 single </S> 	1
 <S> thing 	1
@@ -5547,11 +5524,9 @@ n't burn 	1
 burn down 	1
 down slowly 	1
 slowly </S> 	1
-( inhale 	1
-inhale ) 	1
-) ( 	1
-( exhale 	1
-exhale ) 	1
+<S> inhale 	1
+inhale exhale 	1
+exhale </S> 	1
 're painted 	1
 painted red 	1
 na shelter 	1

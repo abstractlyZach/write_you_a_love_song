@@ -12,6 +12,7 @@ def keep_line(line):
 	# if '_' in line:
 	return True
 
+UNWANTED_PUNCTUATION = ['(', ')', '"', "``", "''"]
 def line_to_ngrams(line, n, punctuation=False):
 	'''Processes the line and returns a list of n-grams.
 	If punctuation is True, then punctuation will be counted as tokens.'''
@@ -21,6 +22,9 @@ def line_to_ngrams(line, n, punctuation=False):
 	else:
 		words = line.lower().split()
 		# maybe manually strip out .?!:;
+	for punctuation in UNWANTED_PUNCTUATION:
+		while punctuation in words:
+			words.remove(punctuation)
 	# add start and end delimiters to the words
 	words = ['<S>'] + words + ['</S>']
 	for start_index in range(len(words) - n + 1):

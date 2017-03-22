@@ -3,6 +3,6 @@
 # superclass for SongWriter objects
 
 class BasicSongWriter:
-	def new_song(self):
+	def new_song(self, short=False):
 		'Return a Song object (from utils.song)'
 		return None

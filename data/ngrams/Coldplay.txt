@@ -1,6 +1,6 @@
 <S> i 	250
 <S> and 	222
-<S> oh 	127
+<S> oh 	131
 do n't 	122
 and i 	117
 i 'm 	114
@@ -18,11 +18,11 @@ oh , 	63
 in the 	59
 we 're 	59
 na get 	56
+oh </S> 	55
 're gon 	54
 on </S> 	53
 i know 	51
 , oh 	51
-oh </S> 	51
 you 're 	51
 it , 	50
 <S> but 	49
@@ -32,14 +32,14 @@ it together 	48
 <S> it 	47
 , and 	46
 la , 	46
-<S> so 	44
+<S> so 	45
 oh oh 	43
 , la 	43
 , </S> 	42
 when i 	41
 to the 	40
 the world 	39
-world </S> 	38
+world </S> 	39
 up </S> 	37
 ca n't 	36
 <S> a 	36
@@ -50,11 +50,10 @@ that i 	34
 <S> in 	32
 in a 	31
 <S> yeah 	31
-) </S> 	31
+. </S> 	31
 in my 	30
 my head 	30
 that 's 	30
-. </S> 	30
 <S> do 	29
 for you 	29
 n't , 	29
@@ -62,7 +61,6 @@ n't , 	29
 when you 	28
 go </S> 	28
 and up 	28
-<S> ( 	28
 <S> the 	27
 i could 	27
 <S> all 	27
@@ -82,6 +80,7 @@ come on 	25
 on a 	24
 want to 	24
 together and 	24
+<S> now 	23
 <S> my 	22
 <S> for 	22
 and you 	22
@@ -89,7 +88,6 @@ know </S> 	22
 that you 	22
 the sun 	22
 no , 	22
-<S> now 	21
 and the 	21
 <S> if 	21
 in your 	21
@@ -98,6 +96,7 @@ do </S> 	21
 we 'll 	21
 <S> every 	21
 down </S> 	20
+yeah </S> 	20
 you can 	20
 together </S> 	20
 oh yeah 	20
@@ -105,7 +104,6 @@ i was 	20
 sun </S> 	20
 , no 	20
 what i 	19
-yeah </S> 	19
 lost </S> 	19
 <S> they 	19
 you 'll 	19
@@ -142,6 +140,7 @@ and it 	16
 <S> up 	16
 to me 	16
 <S> or 	16
+life </S> 	16
 when the 	16
 another 's 	16
 's arms 	16
@@ -159,7 +158,6 @@ say </S> 	15
 head </S> 	15
 i always 	15
 <S> then 	15
-life </S> 	15
 n't want 	15
 <S> no 	15
 rain </S> 	15
@@ -173,6 +171,7 @@ n't let 	14
 done </S> 	14
 'm gon 	14
 to go 	14
+high </S> 	14
 ladder to 	14
 world , 	14
 the rain 	14
@@ -180,7 +179,7 @@ sky </S> 	14
 the sky 	14
 of love 	14
 is a 	14
-( woo 	14
+<S> woo 	14
 word </S> 	13
 i want 	13
 <S> ooh 	13
@@ -189,14 +188,13 @@ wrong </S> 	13
 i think 	13
 on , 	13
 i see 	13
-high </S> 	13
 always </S> 	13
 did n't 	13
 for it 	13
 you i 	13
 hoo , 	13
 , woo 	13
-hoo ) 	13
+hoo </S> 	13
 then we 	13
 'll shoot 	13
 used to 	12
@@ -239,6 +237,7 @@ ah , 	11
 <S> see 	11
 so i 	11
 where i 	11
+will </S> 	11
 from the 	11
 <S> yes 	11
 i wan 	11
@@ -271,7 +270,6 @@ upon a 	10
 go on 	10
 gone </S> 	10
 <S> like 	10
-will </S> 	10
 <S> still 	10
 got to 	10
 're a 	10
@@ -292,6 +290,7 @@ all that 	10
 a head 	10
 <S> amazing 	10
 amazing day 	10
+are </S> 	10
 be a 	10
 how long 	10
 ooh ooh 	10
@@ -331,6 +330,7 @@ as good 	9
 good as 	9
 as mine 	9
 say you 	9
+<S> ah 	9
 and me 	9
 ooh , 	9
 with the 	9
@@ -391,7 +391,6 @@ so much 	8
 how you 	8
 your face 	8
 it out 	8
-<S> ah 	8
 if i 	8
 i can 	8
 <S> with 	8
@@ -463,7 +462,6 @@ one day 	8
 i saw 	8
 so cold 	8
 you 'd 	8
-are </S> 	8
 sing it 	8
 and on 	8
 really hurt 	8
@@ -566,6 +564,7 @@ stars </S> 	7
 high , 	7
 shine for 	7
 the morning 	6
+! </S> 	6
 <S> upon 	6
 pillars of 	6
 peter wo 	6
@@ -640,6 +639,7 @@ we live 	6
 beautiful world 	6
 yeah we 	6
 saw the 	6
+<S> carry 	6
 a long 	6
 heart beating 	6
 beating </S> 	6
@@ -655,6 +655,7 @@ yeah i 	6
 you might 	6
 might be 	6
 without you 	6
+symphony </S> 	6
 wa wa 	6
 a flock 	6
 flock of 	6
@@ -667,9 +668,8 @@ just waiting 	6
 waiting 'till 	6
 'till the 	6
 alive again 	6
-( whoa 	6
+<S> whoa 	6
 whoa ... 	6
-... ) 	6
 drink from 	6
 lower , 	6
 said it 	6
@@ -767,7 +767,6 @@ your blood 	5
 , just 	5
 is that 	5
 much that 	5
-( oh 	5
 there by 	5
 by your 	5
 song </S> 	5
@@ -779,7 +778,6 @@ and do 	5
 come </S> 	5
 i need 	5
 know what 	5
-<S> carry 	5
 , love 	5
 n't stop 	5
 could see 	5
@@ -809,7 +807,6 @@ it then 	5
 honey you 	5
 green eyes 	5
 oh no 	5
-symphony </S> 	5
 was lost 	5
 , cold 	5
 mean i 	5
@@ -839,7 +836,6 @@ down your 	5
 would rise 	4
 the fear 	4
 now the 	4
-! </S> 	4
 key </S> 	4
 the walls 	4
 that my 	4
@@ -980,7 +976,6 @@ just need 	4
 need love 	4
 've had 	4
 ever give 	4
-oh ) 	4
 to show 	4
 i got 	4
 you feel 	4
@@ -1438,7 +1433,6 @@ and take 	3
 the risk 	3
 enough </S> 	3
 got a 	3
-'' </S> 	3
 begin to 	3
 show </S> 	3
 and no 	3
@@ -1623,9 +1617,7 @@ nothing else 	3
 else compares 	3
 compares </S> 	3
 , drink 	3
-( oh-ah-oh-ah 	3
-oh-ah-oh-ah ) 	3
-the ( 	3
+oh-ah-oh-ah </S> 	3
 so heavy 	3
 was just 	3
 of para-para-paradise 	3
@@ -2680,9 +2672,6 @@ shape </S> 	2
 this adventure 	2
 oh then 	2
 morning i 	2
-<S> `` 	2
-`` now 	2
-! '' 	2
 the wicked 	2
 bells were 	2
 were ringing 	2
@@ -2691,9 +2680,7 @@ were singing 	2
 know st. 	2
 st. peter 	2
 i beg 	2
-go ( 	2
-( you 	2
-are ) 	2
+go you 	2
 na give 	2
 give you 	2
 you my 	2
@@ -2705,7 +2692,7 @@ me apart 	2
 care if 	2
 it gets 	2
 <S> drink 	2
-me ( 	2
+me oh-ah-oh-ah 	2
 , angels 	2
 angels sent 	2
 sent from 	2
@@ -3557,11 +3544,9 @@ so cool 	1
 cool </S> 	1
 tattoo that 	1
 that said 	1
-said `` 	1
-`` together 	1
+said together 	1
 together through 	1
 through life 	1
-life '' 	1
 <S> carved 	1
 carved in 	1
 your name 	1
@@ -3597,7 +3582,7 @@ way of 	1
 of keeping 	1
 keeping you 	1
 you inside 	1
-inside ( 	1
+inside oh 	1
 fire bellow 	1
 bellow </S> 	1
 road begin 	1
@@ -3769,9 +3754,7 @@ way , 	1
 lord , 	1
 'm about 	1
 your hurt 	1
-( carry 	1
 , carry 	1
-world ) 	1
 <S> wait 	1
 for your 	1
 your call 	1
@@ -4245,7 +4228,6 @@ you that 	1
 i hold 	1
 hold on 	1
 on to 	1
-will ) 	1
 i cry 	1
 cry oh 	1
 part then 	1
@@ -4782,9 +4764,7 @@ i wait 	1
 leave me 	1
 down here 	1
 here on 	1
-you ( 	1
-( yeah 	1
-yeah ) 	1
+you yeah 	1
 please </S> 	1
 every moment 	1
 moment was 	1
@@ -5155,13 +5135,13 @@ oh ... 	1
 ... who 	1
 ever wan 	1
 na be 	1
-) here 	1
+... here 	1
 here jerusalem 	1
-) roman 	1
-) be 	1
-) my 	1
-) for 	1
-) i 	1
+... roman 	1
+... be 	1
+... my 	1
+... for 	1
+... i 	1
 go out 	1
 out and 	1
 be saved 	1
@@ -5236,11 +5216,9 @@ lighter the 	1
 the more 	1
 more it 	1
 gets dark 	1
-( symphony 	1
-symphony ) 	1
+the symphony 	1
+the oh-ah-oh-ah 	1
 <S> symphony 	1
-( so 	1
-high ) 	1
 make my 	1
 world light 	1
 was down 	1
@@ -5262,9 +5240,9 @@ so thirsty 	1
 thirsty </S> 	1
 just ca 	1
 get enough 	1
-woo ) 	1
-( woo-ooo-ooo-woo 	1
-woo-ooo-ooo-woo ) 	1
+woo </S> 	1
+<S> woo-ooo-ooo-woo 	1
+woo-ooo-ooo-woo </S> 	1
 it coursing 	1
 coursing through 	1
 through my 	1
@@ -5273,8 +5251,8 @@ your love 	1
 's about 	1
 make the 	1
 stars come 	1
-( then 	1
-shoot ) 	1
+the then 	1
+shoot </S> 	1
 so she 	1
 she ran 	1
 away in 	1
@@ -5323,7 +5301,6 @@ rise . 	1
 oh . 	1
 . oo-oo-oo-oo-oo 	1
 oo-oo-oo-oo-oo . 	1
-. ) 	1
 oo-oo-ooo ... 	1
 yeah they 	1
 along </S> 	1
@@ -5457,5 +5434,4 @@ back as 	1
 oh it 	1
 be so 	1
 going back 	1
-( ah 	1
 ah oh 	1

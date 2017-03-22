@@ -1,12 +1,33 @@
-a, h1, h2 { color: red; }
+h1, h2, h3 { 
+	/*color: #966FD6; */
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+a { color: #3923D6; }
 
 body {
-	background-color: yellow;
+	background: #43cea2; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	background-color: #77DD77;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 #main-container {
 	width: 100%;
-	background-color: #ffcc33;
 	margin: auto;
 }
 
@@ -14,7 +35,7 @@ body {
 	padding: 45px;
 	width: 30%;
 	float: left;
-	background-color: blue;
+	background-color: #8EB4E6;
 }
 
 #spotify-player {
@@ -26,7 +47,7 @@ body {
 	float: left;
 	position: relative;
 	left: 50%;
-	background-color: #ffcc33; /* Green */
+	background-color: #DD88FD;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -40,9 +61,9 @@ body {
 	float: left;
 	position: relative;
 	left: 50%;
-	background-color: #4CAF50; /* Green */
+	background-color: #FFFF84;
     border: none;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -53,3 +74,6 @@ body {
 #header {
 	padding: 25px;
 }
+
+#artist-pages { text-align: center; }
+#artist-pages ul { list-style: none; }

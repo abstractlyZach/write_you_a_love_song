@@ -3,16 +3,16 @@
 # module for models that create their songs purely based on 
 #    artist's original lyrics
 
-from . import basic_songwriter
-from . import unigrams, bigrams
+from . import basic_songwriter, unigrams, bigrams
 from collections import defaultdict
-from utils import exceptions, constants, text, song
+from utils import exceptions, constants, text, song, names
 import csv
 import random
 
 class ArtistBigramSongWriter(basic_songwriter.BasicSongWriter):
-	def __init__(self, bigram_file_name):
+	def __init__(self, bigram_file_name, artist):
 		# self._bigram_counts = dict()
+		self._artist = artist
 		self._trouble_words = defaultdict(int)
 		self._enders = set()
 		self._next_word_generator = defaultdict(bigrams.NextWord)
@@ -32,8 +32,11 @@ class ArtistBigramSongWriter(basic_songwriter.BasicSongWriter):
 		# convert to a regular dict so you can get KeyErrors
 		self._next_word_generator = dict(self._next_word_generator)
 
-	def new_song(self):
-		road_map = ['verse', 'chorus', 'verse', 'chorus', 'bridge', 'chorus']
+	def new_song(self, short=False):
+		if short:
+			road_map = ['verse', 'chorus', 'verse']
+		else:
+			road_map = ['verse', 'chorus', 'verse', 'chorus', 'bridge', 'chorus']
 		verses = []
 		# save a chorus for repetition
 		chorus = self._build_verse()
@@ -43,7 +46,14 @@ class ArtistBigramSongWriter(basic_songwriter.BasicSongWriter):
 			else:
 				verse = self._build_verse()
 			verses.append(verse)
-		return song.Song('idk', 'Zach', verses)
+		title = names.random_adjective() + " " + names.random_animal()
+		title = title.title()
+		return song.Song(title, 
+						'Zach (Inspired by {})'.format(self._artist), 
+						verses)
+
+	def get_artist(self):
+		return self._artist
 
 	def _build_verse(self, lines=4):
 		verse = []
@@ -60,12 +70,17 @@ class ArtistBigramSongWriter(basic_songwriter.BasicSongWriter):
 				need_ender = len(string_sequence) == length - 1
 				new_word = self._get_next_word(previous_word, need_ender=need_ender)
 			except exceptions.WordNotFoundError:
-				print('inserting unigram because of {}'.format(previous_word))
+				if constants.DEBUG_ON:
+					print('inserting unigram because of {}'.format(previous_word))
 				new_word = unigrams.get_word()
 			except exceptions.NoEnderFoundException:
-				print("Can't find an ender that follows '{}'. backtracking...".format(previous_word))
+				if constants.DEBUG_ON:
+					print("Can't find an ender that follows '{}'. backtracking...".format(previous_word))
 				problem_word = string_sequence.pop() # remove problem word
 				if self._trouble_words[problem_word] >= constants.NO_ENDERS_RETRY:
+					if constants.DEBUG_ON:
+						print("tried to find an ender that follows '{}' too many times.".format(problem_word))
+						print("backtracking further...")
 					# remove this problem word for leading to another problem word
 					string_sequence.pop()
 					previous_word = string_sequence[-1]
@@ -92,7 +107,8 @@ class ArtistBigramSongWriter(basic_songwriter.BasicSongWriter):
 				if text.check_word(to_return):
 					break # return the word if it's ok
 				if counter >= constants.PROFANITY_RETRY:
-					print('could not find a reasonable next word for {}.'.format(word))
+					if constants.DEBUG_ON:
+						print('could not find a reasonable next word for {}.'.format(word))
 					break
 				counter += 1
 			return to_return

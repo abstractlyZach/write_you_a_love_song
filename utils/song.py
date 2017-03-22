@@ -26,7 +26,7 @@ class Song:
 			print()
 		print()
 
-	def get_html(self, title=False, artist=False):
+	def get_html(self, title=True, artist=True):
 		to_return = ''
 		if title:
 			to_return += '<h2 class="song-title">Title: {}</h2>\n'.format(self._title)
@@ -37,4 +37,4 @@ class Song:
 				to_return += '\n<br>' + line
 			to_return += '\n<br>'
 		to_return += '\n<br>'
-		return to_return
+		return to_return		

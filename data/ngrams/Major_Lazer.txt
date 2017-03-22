@@ -68,6 +68,7 @@ wan na 	2
 i 'm 	2
 go , 	2
 no , 	2
+no </S> 	2
 come on 	2
 you wo 	2
 <S> everybody 	1
@@ -120,10 +121,7 @@ you 'til 	1
 old </S> 	1
 be fighting 	1
 fighting on 	1
-go ( 	1
-( i 	1
-no ) 	1
-) </S> 	1
+go i 	1
 <S> come 	1
 on , 	1
 , come 	1
@@ -162,4 +160,3 @@ i need 	1
 need to 	1
 to know 	1
 know you 	1
-no </S> 	1
