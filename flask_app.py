@@ -207,6 +207,7 @@ def get_songs(artist):
 	song1 = model1.new_song(short=True)
 	song2 = model2.new_song(short=True)
 	return "|||".join([model1_name, model2_name, song1.get_html(), song2.get_html()])
+	
 
 @app.route("/vote_for/<string:algorithm1>/<string:algorithm2>/<int:winner>/<string:artist>")
 def get_vote(algorithm1, algorithm2, winner, artist):

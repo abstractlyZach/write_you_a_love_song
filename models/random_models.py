@@ -21,10 +21,14 @@ def get_models(artist):
 		roll = random.randint(1, 10)
 		if roll > 4:
 			model1_name = random.choice(list(MODELS.keys()))
+			while model1_name == model2_name: # reroll until different
+				model1_name = random.choice(list(MODELS.keys()))
 	if model2_name == 'GoogleUnigramSongWriter':
 		roll = random.randint(1, 10)
 		if roll > 4:
 			model2_name = random.choice(list(MODELS.keys()))
+			while model1_name == model2_name: # reroll until different
+				model2_name = random.choice(list(MODELS.keys()))
 
 	# initialize models
 	model1 = MODELS[model1_name](artist)

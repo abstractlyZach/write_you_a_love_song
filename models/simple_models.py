@@ -24,7 +24,7 @@ class GoogleUnigramSongWriter(basic_songwriter.BasicSongWriter):
 			else:
 				verse = self._build_verse(lines=6)
 			verses.append(verse)
-		title = "The {} {}".format(names.random_adjective(), names.random_food())
+		title = "{} {}".format(names.random_adjective(), names.random_food())
 		title = titlecase(title)
 		artist = names.random_andy_name()
 		return song.Song(title, artist, verses)

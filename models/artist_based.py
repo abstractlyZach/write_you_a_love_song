@@ -161,8 +161,7 @@ class ArtistTrigramSongWriter(basic_songwriter.BasicSongWriter):
 			else:
 				verse = self._build_verse()
 			verses.append(verse)
-		title = "The {} and the {} {}".format(names.random_animal(), 
-											names.random_adjective(), names.random_food())
+		title = '{} {}'.format(names.random_adjective(), names.random_abstract_noun())
 		artist = names.random_r_bandname()
 		title = titlecase(title)
 		artist = titlecase(artist)

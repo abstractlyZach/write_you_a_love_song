@@ -29,9 +29,9 @@ class Song:
 	def get_html(self, title=True, artist=True):
 		to_return = ''
 		if title:
-			to_return += '<h2 class="song-title">Title: {}</h2>\n'.format(self._title)
+			to_return += '<h2 class="song-title">{}</h2>\n'.format(self._title)
 		if artist:
-			to_return += '<h3 class="song-artist">Artist: {}</h3>\n'.format(self._artist)
+			to_return += '<h4 class="song-artist">{}</h4>\n'.format(self._artist)
 		for verse in self._verses:
 			for line in verse:
 				to_return += '\n<br>' + line

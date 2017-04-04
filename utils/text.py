@@ -30,7 +30,7 @@ def detokenize(words):
 
 def combine_words(words, first_word, second_word):
 	'''Combine two words and fix the list'''
-	if first_word in words and words.index(first_word) != len(words):
+	if first_word in words and words.index(first_word) != len(words) - 1:
 		first_index = words.index(first_word)
 		if words[first_index + 1] == second_word:
 			words[first_index] = first_word + second_word

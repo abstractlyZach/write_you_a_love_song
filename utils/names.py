@@ -14,19 +14,61 @@ def random_animal():
 	return random.choice(animals)
 
 def random_adjective():
-	adjectives = ['addicted', 'agreeable', 'amusing', 'ancient', 'angry', 
-	'anxious', 'arrogant', 'average', 'beautiful', 'red', 'orange', 'yellow', 
-	'green', 'blue', 'purple', 'brown', 'pink', 'brave', 'calm', 'chivalrous', 'clumsy', 
-	'cold', 'confused', 'cool', 'crazy', 'defiant', 'dirty', 'dusty', 
-	'embarrassed', 'encouraging', 
-	'energetic', 'enthusiastic', 'evil', 'fast', 'fat', 'fluffy', 'funny', 'fuzzy', 
-	'gentle', 'giant', 'grumpy', 'handsome', 'happy', 'itchy', 'jittery', 'little', 
-	'lonely', 'magnificent', 'lucky', 'mighty', 'modern', 'mute', 'nice', 'obnoxious', 
-	'odd', 'perfect', 'pleasant', 'rare', 'relieved', 'subtle', 'sad', 'salty', 
-	'shallow', 'silent', 'silly', 'small', 'steady', 'strange', 'swift', 'thoughtful', 
-	'victorious', 'vivacious', 'wasteful', 'weary', 'whispering', 'wide-eyed', 'witty', 
-	'wonderful', 'worried', 'well-adjusted', 'zany']
+	adjectives = ['able', 'abundant', 'addicted', 'adorable', 'agreeable', 'alive', 
+	'amusing', 'ancient', 'angry', 'anxious', 'arrogant', 'average', 'bad', 'beautiful', 
+	'better', 'bewildered', 'big', 'blue', 'brave', 'brief', 'brown', 'calm', 
+	'careful', 'chivalrous', 'clean', 'clever', 'clumsy', 'cold', 'confused', 
+	'cool', 'crazy', 'dead', 'defeated', 'defiant', 'delightful', 'different', 
+	'dirty', 'drab', 'dusty', 'eager', 'early', 'easy', 'elegant', 'embarrassed', 
+	'empty', 'encouraging', 'energetic', 'enthusiastic', 'evil', 'faithful', 'famous', 
+	'fancy', 'fast', 'fat', 'few', 'fierce', 'first', 'fluffy', 'full', 'funny', 
+	'fuzzy', 'gentle', 'giant', 'gifted', 'glamorous', 'good', 'great', 'green', 
+	'grumpy', 'handsome', 'happy', 'heavy', 'helpful', 'helpless', 'high', 'important', 
+	'inexpensive', 'itchy', 'jealous', 'jittery', 'jolly', 'kind', 'large', 'last', 
+	'late', 'lazy', 'light', 'little', 'lively', 'lonely', 'long', 'lucky', 
+	'magnificent', 'many', 'mighty', 'modern', 'mushy', 'mute', 'mysterious', 'nervous', 
+	'new', 'next', 'nice', 'numerous', 'obedient', 'obnoxious', 'odd', 'old', 
+	'old-fashioned', 'orange', 'other', 'own', 'panicky', 'perfect', 'pink', 'plain', 
+	'pleasant', 'powerful', 'proud', 'public', 'purple', 'quaint', 'quick', 'rapid', 
+	'rare', 'red', 'relieved', 'repulsive', 'rich', 'right', 'sad', 'salty', 'same', 
+	'scary', 'shallow', 'short', 'shy', 'silent', 'silly', 'slow', 'small', 'sparkling', 
+	'sparse', 'steady', 'strange', 'substantial', 'subtle', 'swift', 'tender', 'thankful', 
+	'thoughtful', 'thoughtless', 'ugliest', 'uninterested', 'unsightly', 'uptight', 'vast', 
+	'victorious', 'vivacious', 'wasteful', 'weary', 'well-adjusted', 'whispering', 
+	'wide-eyed', 'witty', 'wonderful', 'worried', 'wrong', 'yellow', 'young', 'zany', 
+	'zealous']
 	return random.choice(adjectives)
+
+def random_abstract_noun():
+	abstract_nouns = ['ability', 'adoration', 'adventure', 'amazement', 'anger', 
+	'anxiety', 'apprehension', 'artistry', 'awe', 'beauty', 'belief', 'bravery', 
+	'brilliance', 'brutality', 'calm', 'chaos', 'charity', 'clarity', 'coldness', 
+	'comfort', 'communication', 'compassion', 'confidence', 'consideration', 
+	'contentment', 'courage', 'crime', 'culture', 'curiosity', 'customer', 'death', 
+	'deceit', 'dedication', 'defeat', 'delight', 'democracy', 'despair', 'determination', 
+	'dexterity', 'dictatorship', 'disappointment', 'disbelief', 'disquiet', 'disturbance', 
+	'dreams', 'ego', 'elegance', 'energy', 'enhancement', 'enthusiasm', 'envy', 'evil', 
+	'excitement', 'failure', 'faith', 'faithfulness', 'faithlessness', 'fascination', 
+	'favoritism', 'fear', 'forgiveness', 'fragility', 'frailty', 'freedom', 'friendship', 
+	'generosity', 'goodness', 'gossip', 'grace', 'graciousness', 'grief', 'happiness', 
+	'hate', 'hatred', 'hearsay', 'helpfulness', 'helplessness', 'homelessness', 'honesty', 
+	'honor', 'hope', 'humility', 'humor', 'hurt', 'idea', 'idiosyncrasy', 'imagination', 
+	'impression', 'improvement', 'infatuation', 'inflation', 'information', 'insanity', 
+	'integrity', 'intelligence', 'jealousy', 'joy', 'justice', 'kindness', 'knowledge', 
+	'laughter', 'law', 'liberty', 'life', 'loss', 'love', 'loyalty', 'luck', 'luxury', 
+	'maturity', 'memory', 'mercy', 'misery', 'motivation', 'movement', 'need', 'omen', 
+	'opinion', 'opportunism', 'opportunity', 'pain', 'parenthood', 'patience', 
+	'patriotism', 'peace', 'peculiarity', 'perseverance', 'pleasure', 'poverty', 'power', 
+	'pride', 'principle', 'reality', 'redemption', 'refreshment', 'relaxation', 'relief', 
+	'riches', 'romance', 'rumor', 'sadness', 'sanity', 'satisfaction', 'self-control', 
+	'sensitivity', 'service', 'service', 'shock', 'silliness', 'skill', 'slavery', 
+	'sleep', 'sophistication', 'sorrow', 'sparkle', 'speculation', 'speed', 'strength', 
+	'strictness', 'stupidity', 'submission', 'success', 'surprise', 'sympathy', 'talent', 
+	'thought', 'thrill', 'tiredness', 'tolerance', 'trust', 'truth', 'uncertainty', 
+	'unemployment', 'unreality', 'victory', 'wariness', 'warmth', 'weakness', 'wealth', 
+	'weariness', 'wisdom', 'wit', 'worry']
+	return random.choice(abstract_nouns)
+
 
 def random_food():
 	foods = ['bread', 'cookie', 'potato', 'baked potato', 'burger', 'pot roast', 
