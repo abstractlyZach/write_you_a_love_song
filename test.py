@@ -11,6 +11,6 @@
 # 	print( model1 + " || " + model2)
 
 from models import simple_models
-song_writer = simple_models.GoogleUnigramSongWriter()
+song_writer = simple_models.GoogleUnigramSongWriter('heehee')
 song = song_writer.new_song()
 song.print()

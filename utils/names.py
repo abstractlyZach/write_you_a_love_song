@@ -25,7 +25,7 @@ def random_adjective():
 	'odd', 'perfect', 'pleasant', 'rare', 'relieved', 'subtle', 'sad', 'salty', 
 	'shallow', 'silent', 'silly', 'small', 'steady', 'strange', 'swift', 'thoughtful', 
 	'victorious', 'vivacious', 'wasteful', 'weary', 'whispering', 'wide-eyed', 'witty', 
-	'wonderful', 'worried', 'zany']
+	'wonderful', 'worried', 'well-adjusted', 'zany']
 	return random.choice(adjectives)
 
 def random_food():

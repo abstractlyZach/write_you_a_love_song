@@ -32,14 +32,14 @@ class GoogleUnigramSongWriter(basic_songwriter.BasicSongWriter):
 	def _build_verse(self, lines=4):
 		verse = []
 		for line_index in range(lines):
-			line_length = random.randrange(3, 7)
+			line_length = random.randrange(2, 5)
 			verse.append(self._build_line(length=line_length))
 		return verse
 
 	def _build_line(self, length=10):
 		string_sequence = []
 		while len(string_sequence) < length:
-			string_sequence.append(unigrams.get_word())
+			string_sequence.append(unigrams.get_word(unweighted=True))
 		return text.detokenize(string_sequence)
 
 
