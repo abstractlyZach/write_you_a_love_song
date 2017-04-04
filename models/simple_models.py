@@ -6,10 +6,44 @@ from . import bigrams
 from utils import song
 from utils import exceptions
 from utils import get_data
-from utils import text, constants
+from utils import text, constants, names
 from . import basic_songwriter
+from titlecase import titlecase
 
-class GoogleNGramsSongWriter(basic_songwriter.BasicSongWriter):
+class GoogleUnigramSongWriter(basic_songwriter.BasicSongWriter):
+	def new_song(self, short=False):
+		verses = []
+		if short:
+			road_map = ['verse', 'chorus', 'verse']
+		else:
+			road_map = ['verse', 'chorus', 'verse', 'chorus', 'bridge', 'chorus']
+		chorus = self._build_verse(lines=4)
+		for section in road_map:
+			if section == 'chorus':
+				verse = chorus
+			else:
+				verse = self._build_verse(lines=6)
+			verses.append(verse)
+		title = "The {} {}".format(names.random_adjective(), names.random_food())
+		title = titlecase(title)
+		artist = names.random_andy_name()
+		return song.Song(title, artist, verses)
+
+	def _build_verse(self, lines=4):
+		verse = []
+		for line_index in range(lines):
+			line_length = random.randrange(3, 7)
+			verse.append(self._build_line(length=line_length))
+		return verse
+
+	def _build_line(self, length=10):
+		string_sequence = []
+		while len(string_sequence) < length:
+			string_sequence.append(unigrams.get_word())
+		return text.detokenize(string_sequence)
+
+
+class GoogleBigramSongWriter(basic_songwriter.BasicSongWriter):
 	def __init__(self, artist):
 		self._artist = artist
 
@@ -56,7 +90,7 @@ def simple_song(artist, short=False):
 			final_song_line = string_bigrams(seed_word, len=len(line.split()))
 			final_song[verse_index].append(final_song_line)
 	return song.Song(selected_song_title + ' (Remix) (kinda)', 
-						artist.title() + " (and Zach)", 
+						names.random_key_and_peele_name(), 
 						final_song
 					)
 

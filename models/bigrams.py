@@ -10,7 +10,7 @@ from collections import defaultdict
 from utils import exceptions, text, constants
 import copy
 
-def get_bigram_generator_and_enders(file_name='data/ngrams/count_2w.txt'):
+def get_bigram_generator_and_enders(file_name='data/ngrams/2/count_2w.txt'):
 	'''Reads a file of bigrams and their counts and returns
 	a dictionary linking the first word to a NextWord object that can return
 	a next word based on conditional probability

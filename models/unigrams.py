@@ -4,7 +4,7 @@ import numpy
 import csv
 from utils import text
 
-def read_unigrams(file_name='data/ngrams/count_1w.txt'):
+def read_unigrams(file_name='data/ngrams/1/count_1w.txt'):
 	'''Reads a file of unigrams and their counts and returns a tuple
 	containing a list of words and a list of their corresponding probabilities
 	'''

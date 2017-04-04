@@ -19,7 +19,7 @@ n = int(sys.argv[1])
 
 this_file = os.path.dirname(__file__)
 batch_directory = os.path.join(this_file, '../data/songs/batch')
-ngrams_directory = os.path.join(this_file, '../data/ngrams')
+ngrams_directory = os.path.join(this_file, '../data/ngrams/{}'.format(n))
 
 # get a set of artists 
 batch_files = os.listdir(batch_directory)
