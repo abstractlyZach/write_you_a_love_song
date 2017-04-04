@@ -51,9 +51,9 @@ class ArtistBigramSongWriter(basic_songwriter.BasicSongWriter):
 			verses.append(verse)
 		title = names.random_adjective() + " " + names.random_animal()
 		title = title.title()
-		return song.Song(title, 
-						names.random_mouserat_name(), 
-						verses)
+		artist = '{} the {}'.format(names.random_first_name(), names.random_profession())
+		artist = titlecase(artist)
+		return song.Song(title, artist, verses)
 
 	def get_artist(self):
 		return self._artist
@@ -163,7 +163,7 @@ class ArtistTrigramSongWriter(basic_songwriter.BasicSongWriter):
 			verses.append(verse)
 		title = "The {} and the {} {}".format(names.random_animal(), 
 											names.random_adjective(), names.random_food())
-		artist = '{} the {}'.format(names.random_first_name(), names.random_profession())
+		artist = names.random_r_bandname()
 		title = titlecase(title)
 		artist = titlecase(artist)
 		return song.Song(title, artist, verses)
