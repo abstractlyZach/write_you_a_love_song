@@ -1,6 +1,0 @@
-ArtistBigramSongWriter,GoogleNGramsSongWriter,Eminem
-ArtistBigramSongWriter,GoogleNGramsSongWriter,Eminem
-ArtistBigramSongWriter,GoogleNGramsSongWriter,Adele
-ArtistTrigramSongWriter,ArtistBigramSongWriter,Adele
-GoogleUnigramSongWriter,ArtistBigramSongWriter,Adele
-GoogleUnigramSongWriter,ArtistBigramSongWriter,Coldplay
