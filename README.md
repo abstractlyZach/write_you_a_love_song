@@ -1,5 +1,9 @@
 # I'm Just Gonna Write You a Love Song
 
+Cuz where else are you going to get quality lyrics like this?
+
+![Drake lyrcs](drake.jpg)
+
 
 ### Setting up
 1. Modify `start_urls` in  `{project}/lyric_scraper/lyric_scraper/spiders/{spider}` so that it contains the URLs of the artists whose songs you want to scrape.
